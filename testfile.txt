@@ -1,0 +1,10 @@
+GitHub is a web-based platform that hosts Git repositories. 
+It provides a space for developers to store their code online, collaborate with others, and manage their projects. 
+GitHub offers tools for version control, code review, and issue tracking
+
+
+
+
+A Git staging environment is where changes are reviewed before being committed to the repository. 
+It acts as an intermediate area to verify and test code updates. 
+This helps catch and fix issues before they are merged into the main project, ensuring stability and quality.
