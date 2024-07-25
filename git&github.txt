@@ -1,0 +1,75 @@
+-----------------------------Git basic commands--------------------------------------------------
+
+git init -------> To initialise empty repo
+git touch -----> To create files
+git status -------> to see the status of repo files or uncommited changes
+git add . ------> add all changed files to repo
+git add <filename> -----> To add specific file to repo
+git commit -m "message" ----> commits the recent changes from local to the remote repository
+git clone <repository url> -----> To make a copy of remote repo into our local machine
+git clone -b <Branch name><Repository URL>  To copy only specific branch
+git checkout -b develop -----> to create new branch and switch to develop branch
+
+______________stash commands----------------------------------------
+
+git stash --------> use this when we want to switch branch without commiting the latest changes in the present working branch. 
+					it will save the work in hidden space
+
+git stash save "<Stashing Message>" ------>To stash a change with a message
+
+git stash apply ------> To apply the commit, use the git stash command, followed by the apply option
+
+git stash apply <stash id> ------> In case of more than one stash, you can use "git stash apply" command followed by stash index id to apply the particular commit.
+
+git stash show -p ----> to track what changes are made on the file and To display the changed content of the file
+
+git stash drop  -----> command is used to delete a stash from the queue. Caution should be taken before using stash drop command, as it is difficult to undo if once applied.
+git stash drop <stash id>
+
+git stash clear ----> delete all the available stashes at once.
+
+git stash branch <Branch Name> ------> allows the user to stash work on a separate branch to avoid conflicts.
+------------------------------------------------------------------------------------------------------------------
+git log ----> To see the history of commits.
+
+git push -u origin <branch name> -----> to reflect changes to the remote repo.
+
+git pull origin -----> to reflect changes from remote to local cloned copy,
+
+------------------------branch commands----------------------------------------
+
+git branch  <branch name> ---> creates new branch
+
+git branch -----> list all brances
+
+git branch -D <branch name> -----------> delete mentioned branch.
+
+git push origin -delete <branch name> ------> delete a remote branch
+
+git checkout<branch name> -----> to switch branch
+
+git branch -m master ------> to return to master branch.
+
+git branch -m <old branch name><new branch name>  -----> to rename a branch
+
+git merge <branch-name> ----> go to branch you want to merge using git checkout - to merge the other branch with the currently active branch
+
+git merge <commit> ----> to merge the specified commit to currently active branch by switching to branch where you want to merge the commit.
+
+--------------------revert command------------------
+
+git revert ---> to revert the last commit
+
+git revert <commit-ish>  -----> to revert the specific commit
+
+-------------------------------Diff commands----------------------------------------
+
+git diff [source branch] [target branch]	Preview changes before merging
+
+
+
+
+
+
+
+
